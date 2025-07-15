@@ -43,14 +43,14 @@ const chartOptions = ref({
   },
   scales: {
     x: {
-      type: 'linear',
+      type: 'linear' as const,
       title: { display: true, text: 'CG (inches)' },
       min: 82, max: 97,
       grid: { color: '#444' },
       ticks: { color: '#fff' },
     },
     y: {
-      type: 'linear',
+      type: 'linear' as const,
       title: { display: true, text: 'Gross Weight (lbs)' },
       min: 1200, max: 2250,
       grid: { color: '#444' },

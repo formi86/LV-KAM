@@ -4,7 +4,6 @@ import { calculateWB } from './utils/wbCalculator';
 import type { WBInput, WeightUnit, FuelUnit } from './utils/wbCalculator';
 // @ts-ignore
 import config from './config/aircraftConfig';
-import CgEnvelopeChart from './components/CgEnvelopeChart.vue';
 
 const weightUnit = ref<WeightUnit>('kg');
 const fuelUnit = ref<FuelUnit>('liters');
@@ -118,14 +117,7 @@ function payloadSummaryLabel(pilot: number, copilot: number, rearLeft: number, r
 }
 
 // Prepare envelope polygon points from config.cgLimits
-const envelope = [
-  { x: 84.4, y: 1650 },
-  { x: 85.9, y: 1975 },
-  { x: 84.0, y: 2150 },
-  { x: 95.9, y: 2150 },
-  { x: 95.9, y: 1650 },
-  { x: 84.4, y: 1650 }, // close polygon
-];
+
 </script>
 
 <template>
