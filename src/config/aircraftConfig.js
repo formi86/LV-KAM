@@ -18,7 +18,7 @@
 /** @type {AircraftConfig} */
 const config = {
   model: "Piper Cherokee 140 (150hp)",
-  emptyWeight: 1300, // lbs (example, update for your aircraft)
+  emptyWeight: 1379, // lbs (example, update for your aircraft)
   emptyCG: 90.5, // in (example, update for your aircraft)
   maxTakeoffWeight: 2150, // lbs
   maxFuelGallons: 50, // gal (25 gal per tank)
